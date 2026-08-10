@@ -168,6 +168,7 @@ Grad-CAM heatmaps were generated for all 14 disease classes to verify the model 
 - **No shortcut learning detected:** heatmaps stayed on lung/cardiac tissue even on images with corner text markers ("PORTABLE") or unusual framing/watermarks — tested explicitly, not assumed.
 - **One open finding:** Pneumothorax's attention consistently centered on the upper-lung region rather than the more classically expected lung periphery. This pattern held across three independently trained models (original DenseNet-121, weight-decay DenseNet-121, and ResNet-50 comparison), suggesting it reflects a genuine characteristic of how Pneumothorax presents in this dataset's labeled examples, rather than a model-specific quirk.
 
+![Grad-CAM Gallery](outputs/gradcam_gallery_densenet_weightdecay.png)
 ---
 
 ## Model Improvement: Weight Decay
